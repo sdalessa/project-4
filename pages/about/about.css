@@ -1,4 +1,4 @@
-* a{
+a *{
   color: white;
 }
 
@@ -92,4 +92,9 @@ p {
 .ul1 a{
     color: white; 
     
+}
+
+.box3 p{
+  padding: 5px;
+  margin: 5px;
 }
