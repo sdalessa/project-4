@@ -6,6 +6,20 @@ p {
   margin: 5px;
 }
 
+.ul1 li{
+  display: inline-block; 
+}
+
+.ul1 {
+  margin-left: 270px;
+  margin-top: 50px;
+  word-spacing: 50px;
+}
+
+.ul1 a{
+    color: white; 
+    
+}
 .item1 {
   background: LightSkyBlue;
   grid-area: header;
@@ -39,10 +53,10 @@ p {
     grid-template-rows: 100px auto auto 50px;
     grid-gap: 5px;
     grid-template-areas:
-      "header header"
-      "advert content"
-      "advert content"
-      "footer footer";
+    "header header"
+    "advert content"
+    "advert content"
+    "footer footer";
   }
 
 .box1{background: lightskyblue ;}

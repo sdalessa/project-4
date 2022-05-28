@@ -5,7 +5,20 @@ a *{
 p {
   margin: 5px;
 }
+.ul1 li{
+  display: inline-block; 
+}
 
+.ul1 {
+  margin-left: 270px;
+  margin-top: 50px;
+  word-spacing: 50px;
+}
+
+.ul1 a{
+    color: white; 
+    
+}
 .item1 {
   background: LightSkyBlue;
   grid-area: header;
@@ -39,10 +52,10 @@ p {
     grid-template-rows: 100px auto auto 50px;
     grid-gap: 5px;
     grid-template-areas:
-      "header header"
-      "advert content"
-      "advert content"
-      "footer footer";
+    "header header"
+    "advert content"
+    "advert content"
+    "footer footer";
   }
 
 .box1{background: lightskyblue ;}
@@ -54,17 +67,17 @@ p {
 
 .onetwo{
   display: grid;
-  grid-template-columns: 350px auto;
+  grid-template-columns: 100% auto;
   grid-column-gap: 5px;
 }
 .threefour{
   display: grid;
-  grid-template-columns: 1fr 350px;
+  grid-template-columns: 100% 350px;
   grid-column-gap: 5px;
 }
 .fivesix{
   display: grid;
-  grid-template-columns: 350px auto;
+  grid-template-columns: 100% auto;
   grid-column-gap: 5px;
 }
 

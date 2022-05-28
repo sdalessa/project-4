@@ -1,3 +1,8 @@
+* {
+  border-radius: 5px;
+
+}
+
 a *{
   color: white;
 }
@@ -6,18 +11,37 @@ p {
   margin: 5px;
 }
 
+.ul1 li{
+  display: inline-block; 
+}
+
+.ul1 {
+  margin-left: 200px;
+  margin-top: 50px;
+  word-spacing: 50px;
+}
+
+.ul1 a{
+    color: white; 
+    
+}
+
 .item1 {
   background: LightSkyBlue;
   grid-area: header;
+  background-color: black;
   }
 
 .item2 {
   background: LightSalmon;
+  background-color: black;
   grid-area: advert;
+  border-style: inset;
   }
 
 .item3 {
   background: LightGray;
+  
   grid-area: content;
   display: grid;
   grid-gap: 5px 5px;
@@ -26,11 +50,13 @@ p {
 .item4 {
   background: lightpink;
   grid-area: footer;
+  background-color: black;
   }
 
   .container {
     font-size: 1.0em;
     font-family: monospace;
+    border-style: double;
     height: 510px;
     width: 100%;
     background: LightGray;
@@ -45,12 +71,25 @@ p {
       "footer footer";
   }
 
-.box1{background: lightskyblue ;}
-.box2{background: lightsalmon;}
-.box3{background: paleturquoise;}
-.box4{background: lightpink;}
-.box5{background: palegreen;}
-.box6{background: palegoldenrod;}
+.box1{transition: 1s; background: lightskyblue ;border-style: inset;}
+.box2{transition: 1s; background: lightsalmon;border-style: inset;}
+.box3{transition: 1s; background: paleturquoise;border-style: inset;}
+.box4{transition: 1s; background: lightpink;border-style: inset;}
+.box5{transition: 1s; background: palegreen;border-style: inset;}
+.box6{transition: 1s; background: palegoldenrod;border-style: inset;}
+
+.box1:hover{
+  
+  transform: scale(1.2); 
+  background: rgb(37, 164, 243);
+  border-style: inset;
+}
+
+/*.box2:hover{transform: scale(1.2); background: rgb(234, 93, 37);border-style: inset;}*/
+.box3:hover{transform: scale(1.2); background: rgb(40, 240, 240);border-style: inset;}
+.box4:hover{transform: scale(1.2); background: rgb(226, 54, 80);border-style: inset;}
+.box5:hover{transform: scale(1.2); background: rgb(69, 241, 69);border-style: inset;}
+.box6:hover{transform: scale(1.2); background: rgb(246, 231, 71);border-style: inset;}
 
 .onetwo{
   display: grid;
@@ -78,18 +117,29 @@ p {
     color: white; 
 }
 
-.ul1 li{
-  display: inline-block; 
-  
+.side li:hover{
+  transform: scale(1.2);
+  color: white; 
 }
 
-.ul1 {
-  margin-left: 270px;
-  margin-top: 50px;
-  word-spacing: 50px;
-}
 
-.ul1 a{
-    color: white; 
-    
-}
+/*emoji below*/
+  .emoji1, .emoji2 {
+      font-size: 4rem;
+      cursor: pointer;
+      text-align: center;
+  }
+
+  .closed{
+    display: none;
+  }
+
+  .open{
+    display: none;
+  }
+
+  .active{
+    display: block;
+  }
+/*emoji above*/
+
